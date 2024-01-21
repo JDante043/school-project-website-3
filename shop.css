@@ -1,0 +1,104 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 20px 10px;
+    background-color: crimson;
+    color: snow;
+}
+
+header #left-header,
+header #right-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header #left-header *{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header #right-header li{
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+    padding: 5px;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+#main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 25px 0;
+}
+
+#seragam{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 30px 0;
+}
+
+#main-content #main-content-first,
+#main-content #main-content-second,
+#main-content #main-content-third,
+#main-content #main-content-fourth{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 3px;
+    margin: 1%;
+}
+
+.input{
+    display:flex;
+    flex-direction: column;
+}
+
+#main-content * img{
+    width: 300px;
+    height: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#buy-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer{
+    background-color: black;
+    color: snow;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border: none;
+    border-radius: 15px;
+    color: snow;
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+}
+

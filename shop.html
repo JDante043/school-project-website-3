@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./shop.css">
+    <meta charset="UTF-8">
+    <script src="./shop.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+</head>
+<body>
+    
+    <header>
+        <div id="left-header">
+            <img src="./kk.png">
+            <h1>Koperasi SMA Kalam Kudus</h1>
+        </div>
+
+        <div id="right-header">
+            <ul>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./shop.html"><li>Shop</li></a>
+                <a href="./about.html"><li>About</li></a>
+            </ul>   
+        </div>
+    </header>
+
+    <div id="main-content">
+        <div id="seragam">
+            <div id="main-content-first">
+                <img src="./seragam 1.jpeg">
+                <h1>Seragam 1</h1>
+                <div class="input">
+                    <select id="putih">
+                        <option value="s" onclick="checkprice()">S (Rp.50k)</option>
+                        <option value="m" onclick="checkprice()">M (Rp. 100k)</option>
+                        <option value="l" onclick="checkprice()">L (Rp. 150k)</option>
+                        <option value="n" onclick="checkprice()" selected>X</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="main-content-second">
+                <img src="./celana.jpeg">
+                <h1>Seragam 2</h1>
+                <select id="celana">
+                    <option value="s" onclick="checkprice()">S (Rp.50k)</option>
+                    <option value="m" onclick="checkprice()">M (Rp. 100k)</option>
+                    <option value="l" onclick="checkprice()">L (Rp. 150k)</option>
+                    <option value="n" onclick="checkprice()" selected>X</option>
+                </select>
+        </div>
+            
+            <div id="main-content-third">
+                <img src="./rok.jpeg">
+                <h1>Seragam 3</h1>
+                <select id="rok">
+                    <option value="s" onclick="checkprice()">S (Rp.50k)</option>
+                    <option value="m" onclick="checkprice()">M (Rp. 100k)</option>
+                    <option value="l" onclick="checkprice()">L (Rp. 150k)</option>
+                    <option value="n" onclick="checkprice()" selected>X</option>
+                </select>
+        </div>
+
+            <div id="main-content-fourth">
+                <img src="./batik.jpeg">
+                <h1>Seragam 4</h1>
+                <select id="batik">
+                    <option value="s" onclick="checkprice()">S (Rp.50k)</option>
+                    <option value="m" onclick="checkprice()">M (Rp. 100k)</option>
+                    <option value="l" onclick="checkprice()">L (Rp. 150k)</option>
+                    <option value="n" onclick="checkprice()" selected>X</option>
+                </select>
+        </div>
+        </div>    
+                <div id="buy-area">
+                    <h1 id="sum"></h1>
+                    <button onclick="thanks()">Beli sekarang!</button>
+                </div>
+    </div>
+
+    <footer>
+        Copyright @ 2024 Nama perusahaan
+    </footer>
+</body>
+</html>
