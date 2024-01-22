@@ -1,59 +1,78 @@
+var price;
+
 function checkprice(){
-    var price = 0;
+    var sum,firstp, secondp, thirdp, fourthp;
     var first,second,third,fourth;
     
     first = document.getElementById("putih").value;
     if (first == "s"){
-        price += 50;
+         firstp = 50;
     }
     else if (first == "m"){
-        price += 100;
+         firstp = 100;
     }
     else if (first == "l"){
-        price += 150;
+         firstp =   150;
+    }
+    else{
+        firstp = 0;
     }
 
     second = document.getElementById("celana").value;
     if (second == "s"){
-        price += 50;
+        secondp = 50;
     }
     else if (second == "m"){
-        price += 100;
+        secondp = 100;
     }
     else if (second == "l"){
-        price += 150;
+        secondp = 150;
+    }
+    else{
+        secondp = 0;
     }
 
     third = document.getElementById("rok").value;
     if (third == "s"){
-        price += 50;
+        thirdp = 50;
     }
     else if (third == "m"){
-        price += 100;
+        thirdp = 100;
     }
     else if (third == "l"){
-        price += 150;
+        thirdp = 150;
+    }
+    else{
+        thirdp = 0;
     }
 
     fourth = document.getElementById("batik").value;
     if (fourth == "s"){
-        price += 50;
+        fourthp = 50;
     }
     else if (fourth == "m"){
-        price += 100;
+        fourthp = 100;
     }
     else if (fourth == "l"){
-        price += 150;
+        fourthp = 150;
+    }
+    else{
+        fourthp = 0;
     }
 
+    sum = firstp + secondp + thirdp + fourthp;
+    price = sum;
+
     if (price != 0){
-        document.getElementById("sum").innerHTML = `Harga total: RP. ${price}.000`
+        document.getElementById("sum").innerHTML = `Harga total: RP. ${sum}.000`
     }
     else{
         document.getElementById("sum").innerHTML = ''
     }
+
+
 }
 
 function thanks(){
-    alert("Terimakasih sudah membeli :)");
+    alert("Terimakasih sudah membeli, total harga anda Rp." + price + ".000");
 }
